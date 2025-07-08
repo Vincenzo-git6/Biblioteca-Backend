@@ -101,7 +101,7 @@ public class UserService
         userRepository.deleteById(id);
     }
 
-    public List<UserDto> getUserByUsernameLikeERuolo(String username, String ruolo)
+    public List<UserDto> getUserByUsernameLikeERuolo(String username, Ruolo ruolo)
     {
         return userRepository.findUserByUsernameLikeERuolo(username, ruolo)
                 .stream()

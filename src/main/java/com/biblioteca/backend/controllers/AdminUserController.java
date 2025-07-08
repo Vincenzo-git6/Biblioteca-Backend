@@ -47,7 +47,7 @@ public class AdminUserController
     }
 
     @GetMapping("like")
-    public List<UserDto> getUserByUsernameLikeERuolo(@RequestParam String username, @RequestParam String ruolo)
+    public List<UserDto> getUserByUsernameLikeERuolo(@RequestParam String username, @RequestParam Ruolo ruolo)
     {
         List<UserDto> users = userService.getUserByUsernameLikeERuolo(username, ruolo);
         if (users.isEmpty()) {
